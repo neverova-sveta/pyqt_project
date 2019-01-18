@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>528</width>
-    <height>801</height>
+    <width>669</width>
+    <height>864</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -397,13 +397,63 @@ p, li { white-space: pre-wrap; }
      <string>Рассчитать пошлину</string>
     </property>
    </widget>
+   <widget class="QRadioButton" name="type_doc2_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>480</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>до подачи</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_6</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="type_doc2_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>480</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>после подачи</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_6</string>
+    </attribute>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>528</width>
+     <width>669</width>
      <height>21</height>
     </rect>
    </property>
@@ -413,10 +463,9 @@ p, li { white-space: pre-wrap; }
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>
