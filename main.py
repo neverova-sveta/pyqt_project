@@ -168,7 +168,12 @@ class MyWidget(QMainWindow):
         text = self.result_text.toPlainText()
         filename = QFileDialog.getSaveFileName(self)
         file = open(filename[0] + ".txt", "w", encoding="utf-8")
-        file.write(text)
+        formul = []
+        for index in range(self.formuls.count()):
+            formul.append(self.formuls.item(index))
+        formul_to_file = [i.text() for i in formul]
+        file.write("\n".join(formul_to_file))
+        file.write("\nИтоговая пошлина"+text)
         file.close()
 
 
